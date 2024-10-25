@@ -1,176 +1,144 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Stile für die Bar */
-.navbar {
-  position: relative;
-  top: 70px; /* Initialer Abstand vom oberen Rand */
-  left: 0;
-  width: 100%;
-  background-color: #381D54; /* Hintergrundfarbe */
-  color: white;
-  padding: 10px 20px; /* Padding bestimmt die Höhe */
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: 40px; /* Feste Höhe der Bar im Ausgangsszustand */
-  transition: background-color 0.3s, height 0.3s; /* Übergänge für die Änderung der Hintergrundfarbe und Höhe */
-}
-
-/* Logo */
-.logo {
-  height: 135px; /* Ausgangsgröße des Logos */
-  width: auto;
-  margin-left: -10px; /* Platzierung des Logos */
-  transition: height 0.3s; /* Übergang für die Änderung der Größe */
-}
-
-/* Der Text bleibt rechts vom Bild */
-.title {
-  font-size: 35px;
-  margin-left: 10px; /* Abstand zwischen Bild und Text */
-  font-weight: bold; /* Macht die Überschrift fett */
-  transition: font-size 0.3s; /* Übergang für die Schriftgröße */
-}
-
-
-/* Dummy-Inhalt für Scrollen */
-.content {
-  margin-top: 200px;
-  padding: 20px;
-  height: 2000px;
-}
-
-/* Wenn die Bar fixiert ist */
-.sticky {
-  background-color: #381D54; /* Neue Hintergrundfarbe, wenn die Bar oben fixiert ist */
-  height: 60px; /* Reduziere die Höhe der Bar */
-}
-
-.sticky .logo {
-  height: 80px; /* Kleineres Logo, wenn die Bar fixiert ist */
-}
-
-
-.sticky .title {
-  font-size: 33px; /* Reduziere die Schriftgröße beim Scrollen */
-}
-
-/* Container für die Buttons */
-.button-container {
-  display: flex; /* Flexbox für die Buttons */
-  margin-left: 60px;
-  margin-top: 120px; /* Abstand nach oben */
-  margin-bottom: -120px; /* Abstand nach unten */
-}
-
-/* Stil für die Home-Schaltfläche */
-.home-button {
-  background-color: transparent; /* Kein Hintergrund */
-  color: #381D54; /* Schriftfarbe für den Home-Button */
-  border: none; /* Kein Rahmen */
-  font-size: 20px; /* Schriftgröße */
-  font-weight: bold; /* Fett gedruckt */
-  align-items: center; /* Vertikale Ausrichtung */
-}
-
-/* Bild unter dem Home-Button */
-.button-icon {
-  height: 5px; /* Größe des Symbols */
-  width: auto; /* Auto-Breite */
-  margin-left: 5px; /* Abstand zwischen Text und Bild */
-}
-
-/* Stil für den Table-Button */
-.table-button {
-  background-color: transparent; /* Kein Hintergrund */
-  color: #381D54; /* Schriftfarbe für den Table-Button */
-  border: none; /* Kein Rahmen */
-  font-size: 20px; /* Schriftgröße */
-  font-weight: bold; /* Fett gedruckt */
-}
-
-/* Breiter Balken */
-.wide-bar {
-  top: 140px; /* Initialer Abstand vom oberen Rand */
-  width: 100%;
-  height: 200px; /* Höhe des Balkens */
-  background-image: url('../img/Balken.png'); /* Pfad zu deinem Hintergrundbild */
-  background-size: cover; /* Hintergrundbild füllt den Balken */
-  background-position: center; /* Bild ist zentriert */
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  text-align: left;
-  position: relative; /* Statisch unter der Bar */
-  z-index: 900; /* Bleibt hinter der Navbar */
-}
-
-/* Text im breiten Balken */
-.bar-text {
-  font-size: 50px;
-  color: white;
-  font-weight: bold;
-  margin-left: 40px;
-}
-
-/* Abschnitt mit Überschrift, Bild und Text */
-.section {
-  margin-top: 200px;
-  margin-left: 50px;
-  margin-bottom: 20px; /* Abstand unter dem Abschnitt */
-}
-
-.description-title {
-  color: #381D54;
-  font-size: 30px;
-  font-weight: bolder;
-  margin-bottom: -5px;
-}
-
-.content-container {
-  display: flex; /* Aktiviert Flexbox */
-  align-items: flex-start; /* Vertikale Ausrichtung */
-}
-
-.text-content {
-  color: #381D54;
-  font-size: 25px;
-}
-
-.foden {
-  height: 750px;
-  width: auto;
-  margin-left: 10px; /* Abstand zum linken Nachbarelement (Text) */
-  margin-right: 50px;
-  margin-top: -20px;
-}
-
-
-footer {
-  background-color: #381D54; /* Hintergrundfarbe nur für den Footer */
-  color: #ffffff; /* Textfarbe */
-  padding: 20px; /* Innenabstand */
-  width: 100%; /* Vollständige Breite */
-  height: 100px;
-  position: relative; /* Relative Positionierung */
-  bottom: 0; /* Positioniert den Footer am unteren Rand */
-}
-
-.footer-text {
-  margin-left: 50px; /* Kein Abstand um den Text */
-}
-
-.footer-link {
-  color: #ffffff; /* Linkfarbe */
-  text-decoration: underline; /* Unterstrich für den Link */
-  margin-left: 50px;
-}
-
-.footer-link:hover {
-  text-decoration: none; /* Kein Unterstrich, wenn der Link darüber hoverd wird */
-}
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Stile für die Bar */
+  .navbar {
+    position: relative;
+    top: 70px; /* Initialer Abstand vom oberen Rand */
+    left: 0;
+    width: 100%;
+    background-color: #381D54; /* Hintergrundfarbe */
+    color: white;
+    padding: 10px 20px; /* Padding bestimmt die Höhe */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40px; /* Feste Höhe der Bar im Ausgangsszustand */
+    transition: background-color 0.3s, height 0.3s; /* Übergänge für die Änderung der Hintergrundfarbe und Höhe */
+  }
+  
+  /* Logo */
+  .logo {
+    height: 135px; /* Ausgangsgröße des Logos */
+    width: auto;
+    margin-left: -10px; /* Platzierung des Logos */
+    transition: height 0.3s; /* Übergang für die Änderung der Größe */
+  }
+  
+  /* Der Text bleibt rechts vom Bild */
+  .title {
+    font-size: 35px;
+    margin-left: 10px; /* Abstand zwischen Bild und Text */
+    font-weight: bold; /* Macht die Überschrift fett */
+    transition: font-size 0.3s; /* Übergang für die Schriftgröße */
+  }
+  
+  
+  /* Wenn die Bar fixiert ist */
+  .sticky {
+    background-color: #381D54; /* Neue Hintergrundfarbe, wenn die Bar oben fixiert ist */
+    height: 60px; /* Reduziere die Höhe der Bar */
+  }
+  
+  .sticky .logo {
+    height: 80px; /* Kleineres Logo, wenn die Bar fixiert ist */
+  }
+  
+  
+  .sticky .title {
+    font-size: 33px; /* Reduziere die Schriftgröße beim Scrollen */
+  }
+  
+  
+  .button-container {
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: -140px;
+    margin-left: 20px;
+  }
+  
+  .button-group {
+    display: flex; /* Zeigt die Buttons nebeneinander an */
+    margin-left: 60px; /* Zentriert die Buttons horizontal */
+    gap: 40px; /* Abstand zwischen den Buttons */
+  }
+  
+  
+  .button-icon {
+    display: block; /* Bild als Blockelement unter den Buttons */
+    margin: 10px 143px 0; /* Zentriert das Bild unter den Buttons und fügt oben Abstand hinzu */
+    height: 5px; /* Festgelegte Bildgröße */
+    width: 75px;
+  }
+  
+  .home-button {
+    background-color: transparent; /* Kein Hintergrund */
+    color: #c6bece; /* Schriftfarbe für den Table-Button */
+    border: none; /* Kein Rahmen */
+    font-size: 20px; /* Schriftgröße */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+  }
+  
+  
+  /* Stil für den Table-Button */
+  .table-button {
+    background-color: transparent; /* Kein Hintergrund */
+    color: #381D54; /* Schriftfarbe für den Table-Button */
+    border: none; /* Kein Rahmen */
+    font-size: 20px; /* Schriftgröße */
+    font-weight: bold; /* Fett gedruckt */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+  }
+  
+  /* Breiter Balken */
+  .wide-bar {
+    top: 140px; /* Initialer Abstand vom oberen Rand */
+    width: 100%;
+    height: 200px; /* Höhe des Balkens */
+    background-image: url('../img/Balken.png'); /* Pfad zu deinem Hintergrundbild */
+    background-size: cover; /* Hintergrundbild füllt den Balken */
+    background-position: center; /* Bild ist zentriert */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    position: relative; /* Statisch unter der Bar */
+    z-index: 900; /* Bleibt hinter der Navbar */
+  }
+  
+  /* Text im breiten Balken */
+  .bar-text {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    margin-left: 40px;
+  }
+  
+  footer {
+    background-color: #381D54; /* Hintergrundfarbe nur für den Footer */
+    color: #ffffff; /* Textfarbe */
+    padding: 20px; /* Innenabstand */
+    width: 100%; /* Vollständige Breite */
+    height: 100px;
+    position: relative; /* Relative Positionierung */
+    bottom: 0; /* Positioniert den Footer am unteren Rand */
+  }
+  
+  .footer-text {
+    margin-left: 50px; /* Kein Abstand um den Text */
+  }
+  
+  .footer-link {
+    color: #ffffff; /* Linkfarbe */
+    text-decoration: underline; /* Unterstrich für den Link */
+    margin-left: 50px;
+  }
+  
+  .footer-link:hover {
+    text-decoration: none; /* Kein Unterstrich, wenn der Link darüber hoverd wird */
+  }
+  
