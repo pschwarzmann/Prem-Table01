@@ -142,3 +142,71 @@ body {
     text-decoration: none; /* Kein Unterstrich, wenn der Link darüber hoverd wird */
   }
   
+
+
+  /* Allgemeine Container-Stile */
+.table-container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: white; /* Weißer Hintergrund wie bei der PL-Website */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.table-title {
+  background-color: #ffffff; /* Violette PL-Farbe */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+/* Container für die Tabelle */
+#league-table-container {
+  margin: 250px auto; /* Standardabstand oben */
+  padding: 10px; /* Padding für den Container */
+  width: 90%; /* Breite der Tabelle */
+  text-align: center;
+}
+
+
+/* Tabelle */
+#league-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: center;
+}
+
+#league-table thead {
+  background-color: #381D54; /* Violetter Header */
+  color: white;
+}
+
+#league-table th,
+#league-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#league-table tbody tr {
+  transition: all 0.2s ease; /* Sanfter Übergang bei Abstandsänderungen */
+}
+
+#league-table tbody tr:nth-child(odd) {
+  background-color: #f7f7f7; /* Helle Streifen */
+}
+
+/* Team-Logos */
+.team-logo {
+  height: 30px;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
