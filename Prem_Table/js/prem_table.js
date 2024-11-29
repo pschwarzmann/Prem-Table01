@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const apiUrl = "https://api.openligadb.de/getbltable/pl1/2023";
+  const apiUrl = "https://api.openligadb.de/getbltable/ucl2024/2024";
   const tableBody = document.querySelector("#league-table tbody");
 
   fetch(apiUrl)
@@ -30,14 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         row.innerHTML = `
           <td>${index + 1}</td> <!-- Platz -->
-          <td>${team.TeamName || "Unbekannt"}</td>
-          <td>${team.Matches || 0}</td>
-          <td>${team.Wins || 0}</td>
-          <td>${team.Draws || 0}</td>
-          <td>${team.Losses || 0}</td>
-          <td>${team.Goals || 0}</td>
-          <td>${team.OpponentGoals || 0}</td>
-          <td>${team.Points || 0}</td>
+          <td><img src="${team.teamIconUrl}" alt="${team.teamName}"  height="100" width="auto"><td>
+          <td>${team.teamName || 0}</td>
+          <td>${team.matches || 0}</td>
+          <td>${team.won || 0}</td>
+          <td>${team.draw || 0}</td>
+          <td>${team.lost || 0}</td>
+          <td>${team.goals || 0}</td>
+          <td>${team.opponentGoals || 0}</td>
+          <td>${team.points || 0}</td>
         `;
 
         tableBody.appendChild(row);
