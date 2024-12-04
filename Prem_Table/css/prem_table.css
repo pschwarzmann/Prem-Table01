@@ -142,71 +142,93 @@ body {
     text-decoration: none; /* Kein Unterstrich, wenn der Link darüber hoverd wird */
   }
   
-
-
-  /* Allgemeine Container-Stile */
-.table-container {
-  width: 80%;
-  margin: 20px auto;
-  background-color: white; /* Weißer Hintergrund wie bei der PL-Website */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.table-title {
-  background-color: #ffffff; /* Violette PL-Farbe */
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-
-/* Container für die Tabelle */
+/* Allgemeine Tabelleinstellungen */
 #league-table-container {
-  margin: 250px auto; /* Standardabstand oben */
-  padding: 10px; /* Padding für den Container */
-  width: 90%; /* Breite der Tabelle */
-  text-align: center;
+  margin-top: 250px; /* Abstand von der oberen Bar */
+  margin-bottom: 150px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-/* Tabelle */
 #league-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 16px;
-  text-align: center;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Zentriert die Spaltenüberschriften */
 }
 
-#league-table thead {
-  background-color: #381D54; /* Violetter Header */
-  color: white;
+#league-table th {
+  text-align: center; /* Zentriert Spaltenüberschriften */
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #6c757d;
 }
 
-#league-table th,
 #league-table td {
   padding: 10px;
-  border: 1px solid #ccc;
-}
-
-#league-table tbody tr {
-  transition: all 0.2s ease; /* Sanfter Übergang bei Abstandsänderungen */
-}
-
-#league-table tbody tr:nth-child(odd) {
-  background-color: #f7f7f7; /* Helle Streifen */
-}
-
-/* Team-Logos */
-.team-logo {
-  height: 30px;
-  width: auto;
-  margin-right: 10px;
+  font-size: 14px;
   vertical-align: middle;
 }
 
+/* Punkte fett darstellen */
+.points-column {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center; /* Punkte zentrieren */
+}
 
+/* Club Logo und Name links ausrichten */
+.club-cell {
+  text-align: left; /* Links ausrichten */
+}
+
+.club-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px; /* Abstand zwischen Logo und Name */
+  vertical-align: middle;
+}
+
+/* Position Column Styling */
+.position-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Abstand zwischen Nummer und Punkt */
+}
+
+.position-column span {
+  font-weight: bold;
+  color: #6c757d;
+}
+
+.position-dot {
+  font-size: 20px;
+  color: #6c757d;
+}
+
+/* Top 4 Clubs - Blau */
+tr:nth-child(-n+4) td:first-child {
+  border-left: 5px solid #0057b8; /* Blau */
+}
+
+/* 5. Platz - Orange */
+tr:nth-child(5) td:first-child {
+  border-left: 5px solid #ff5500; /* Orange */
+}
+
+/* 6. Platz - Grün */
+tr:nth-child(6) td:first-child {
+  border-left: 5px solid #00a650; /* Grün */
+}
+
+/* Abwechselnde Zeilenfarben */
+#league-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+#league-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
