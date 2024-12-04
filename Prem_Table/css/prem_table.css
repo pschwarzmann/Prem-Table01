@@ -142,6 +142,7 @@ body {
     text-decoration: none; /* Kein Unterstrich, wenn der Link darüber hoverd wird */
   }
   
+
 /* Allgemeine Tabelleinstellungen */
 #league-table-container {
   margin-top: 250px; /* Abstand von der oberen Bar */
@@ -162,7 +163,7 @@ body {
   text-align: center; /* Zentriert Spaltenüberschriften */
   padding: 10px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   color: #6c757d;
 }
 
@@ -170,6 +171,7 @@ body {
   padding: 10px;
   font-size: 14px;
   vertical-align: middle;
+  height: 60px;
 }
 
 /* Punkte fett darstellen */
@@ -185,10 +187,10 @@ body {
 }
 
 .club-logo {
-  height: 40px;
+  height: 35px;
   width: auto;
-  margin-right: 10px; /* Abstand zwischen Logo und Name */
-  vertical-align: middle;
+  margin-right: 20px; /* Abstand zwischen Logo und Name */
+  vertical-align: left;
 }
 
 /* Position Column Styling */
@@ -198,6 +200,7 @@ body {
   justify-content: center;
   gap: 5px; /* Abstand zwischen Nummer und Punkt */
 }
+
 
 .position-column span {
   font-weight: bold;
