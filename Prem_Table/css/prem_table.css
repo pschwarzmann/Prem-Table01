@@ -76,9 +76,9 @@ body {
   }
   
   .home-button {
-    background-color: transparent; /* Kein Hintergrund */
+    background-color: transparent; /*  Hintergrund */
     color: #c6bece; /* Schriftfarbe für den Table-Button */
-    border: none; /* Kein Rahmen */
+    border: none; 
     font-size: 20px; /* Schriftgröße */
     text-decoration: none; /* Entfernt die Unterstreichung */
   }
@@ -86,9 +86,9 @@ body {
   
   /* Stil für den Table-Button */
   .table-button {
-    background-color: transparent; /* Kein Hintergrund */
+    background-color: transparent; /* Hintergrund */
     color: #381D54; /* Schriftfarbe für den Table-Button */
-    border: none; /* Kein Rahmen */
+    border: none; 
     font-size: 20px; /* Schriftgröße */
     font-weight: bold; /* Fett gedruckt */
     text-decoration: none; /* Entfernt die Unterstreichung */
@@ -139,7 +139,7 @@ body {
   }
   
   .footer-link:hover {
-    text-decoration: none; /* Kein Unterstrich, wenn der Link darüber hoverd wird */
+    text-decoration: none; /* Kein Unterstrich wenn der Link darüber hoverd wird */
   }
   
 
@@ -174,7 +174,7 @@ body {
   height: 60px;
 }
 
-/* Punkte fett darstellen */
+/* Punkte*/
 .points-column {
   font-weight: bold;
   font-size: 15px;
@@ -212,22 +212,22 @@ body {
   color: #6c757d;
 }
 
-/* Top 4 Clubs - Blau */
+
 tr:nth-child(-n+4) td:first-child {
-  border-left: 5px solid #0057b8; /* Blau */
+  border-left: 5px solid #0057b8; 
 }
 
-/* 5. Platz - Orange */
+
 tr:nth-child(5) td:first-child {
-  border-left: 5px solid #ff5500; /* Orange */
+  border-left: 5px solid #ff5500; 
 }
 
-/* 6. Platz - Grün */
+
 tr:nth-child(6) td:first-child {
-  border-left: 5px solid #00a650; /* Grün */
+  border-left: 5px solid #00a650; 
 }
 
-/* Abwechselnde Zeilenfarben */
+
 #league-table tbody tr:nth-child(odd) {
   background-color: #f9f9f9;
 }

@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </td>
           <td class="club-cell">
             <div class="club-logo-container">
-              <img src="${team.teamIconUrl}" alt="${team.teamName}" class="club-logo">
+              <img src="${team.teamIconUrl}" alt="${"Bild konnte nicht geladen werden"}" class="club-logo">
             </div>
             <div class="club-name">
               <span>${team.teamName}</span>
@@ -57,3 +57,29 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Fehler beim Laden der Daten:", error);
     });
 });
+
+// Beispielwerte
+const testValue = {
+  name: "TestUser",
+  id: 12345
+};
+
+
+localStorage.setItem("localTest", JSON.stringify(testValue));
+
+
+sessionStorage.setItem("sessionTest", JSON.stringify(testValue));
+
+
+const setCookie = (name, value, days) => {
+  const date = new Date();
+  date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+  const expires = `expires=${date.toUTCString()}`;
+  document.cookie = `${name}=${value}; ${expires}; path=/`;
+};
+setCookie("cookieTest", JSON.stringify(testValue), 7);
+
+// Testen der gespeicherten Werte
+console.log("Local Storage:", localStorage.getItem("localTest"));
+console.log("Session Storage:", sessionStorage.getItem("sessionTest"));
+console.log("Cookies:", document.cookie);
