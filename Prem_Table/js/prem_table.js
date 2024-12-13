@@ -10,17 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Sortieren nach Punkten, Tordifferenz, und geschossenen Toren
+     
       const sortedData = data.sort((a, b) => {
         const goalDiffA = a.Goals - a.OpponentGoals;
         const goalDiffB = b.Goals - b.OpponentGoals;
 
         if (b.Points !== a.Points) {
-          return b.Points - a.Points; // Nach Punkten absteigend
+          return b.Points - a.Points; 
         } else if (goalDiffB !== goalDiffA) {
-          return goalDiffB - goalDiffA; // Nach Tordifferenz absteigend
+          return goalDiffB - goalDiffA;
         } else {
-          return b.Goals - a.Goals; // Nach geschossenen Toren absteigend
+          return b.Goals - a.Goals; 
         }
       });
 

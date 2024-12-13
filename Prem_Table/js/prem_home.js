@@ -3,7 +3,7 @@ window.onscroll = function() {
 };
 
 var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop - 70; // Die 70px vom oberen Rand berücksichtigen
+var sticky = navbar.offsetTop - 70; 
 
 function checkScroll() {
   if (window.pageYOffset > sticky) {

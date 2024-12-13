@@ -4,55 +4,48 @@ body {
   padding: 0;
 }
 
-/* Stile für die Bar */
 .navbar {
   position: relative;
-  top: 70px; /* Initialer Abstand vom oberen Rand */
+  top: 70px;
   left: 0;
   width: 100%;
-  background-color: #381D54; /* Hintergrundfarbe */
+  background-color: #381D54;
   color: white;
-  padding: 10px 20px; /* Padding bestimmt die Höhe */
+  padding: 10px 20px;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 40px; /* Feste Höhe der Bar im Ausgangsszustand */
-  transition: background-color 0.3s, height 0.3s; /* Übergänge für die Änderung der Hintergrundfarbe und Höhe */
+  height: 40px;
+  transition: background-color 0.3s, height 0.3s;
 }
 
-/* Logo */
 .logo {
-  height: 135px; /* Ausgangsgröße des Logos */
+  height: 135px;
   width: auto;
-  margin-left: -10px; /* Platzierung des Logos */
-  transition: height 0.3s; /* Übergang für die Änderung der Größe */
+  margin-left: -10px;
+  transition: height 0.3s;
 }
 
-/* Der Text bleibt rechts vom Bild */
 .title {
   font-size: 35px;
-  margin-left: 10px; /* Abstand zwischen Bild und Text */
-  font-weight: bold; /* Macht die Überschrift fett */
-  transition: font-size 0.3s; /* Übergang für die Schriftgröße */
+  margin-left: 10px;
+  font-weight: bold;
+  transition: font-size 0.3s;
 }
 
-
-/* Wenn die Bar fixiert ist */
 .sticky {
-  background-color: #381D54; /* Neue Hintergrundfarbe, wenn die Bar oben fixiert ist */
-  height: 60px; /* Reduziere die Höhe der Bar */
+  background-color: #381D54;
+  height: 60px;
 }
 
 .sticky .logo {
-  height: 80px; /* Kleineres Logo, wenn die Bar fixiert ist */
+  height: 80px;
 }
-
 
 .sticky .title {
-  font-size: 33px; /* Reduziere die Schriftgröße beim Scrollen */
+  font-size: 33px;
 }
-
 
 .button-container {
   text-align: center;
@@ -62,55 +55,50 @@ body {
 }
 
 .button-group {
-  display: flex; /* Zeigt die Buttons nebeneinander an */
-  margin-left: 60px; /* Zentriert die Buttons horizontal */
-  gap: 40px; /* Abstand zwischen den Buttons */
+  display: flex;
+  margin-left: 60px;
+  gap: 40px;
 }
 
-
 .button-icon {
-  display: block; /* Bild als Blockelement unter den Buttons */
-  margin: 10px 50px 0; /* Zentriert das Bild unter den Buttons und fügt oben Abstand hinzu */
-  height: 5px; /* Festgelegte Bildgröße */
+  display: block;
+  margin: 10px 50px 0;
+  height: 5px;
   width: 75px;
 }
 
 .home-button {
-  background-color: transparent; /* Kein Hintergrund */
-  color: #381D54; /* Schriftfarbe für den Table-Button */
-  border: none; /* Kein Rahmen */
-  font-size: 20px; /* Schriftgröße */
-  font-weight: bold; /* Fett gedruckt */
-  text-decoration: none; /* Entfernt die Unterstreichung */
+  background-color: transparent;
+  color: #381D54;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-
-/* Stil für den Table-Button */
 .table-button {
-  background-color: transparent; /* Kein Hintergrund */
-  color: #c6bece; /* Schriftfarbe für den Table-Button */
-  border: none; /* Kein Rahmen */
-  font-size: 20px; /* Schriftgröße */
-  text-decoration: none; /* Entfernt die Unterstreichung */
+  background-color: transparent;
+  color: #c6bece;
+  border: none;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-/* Breiter Balken */
 .wide-bar {
-  top: 140px; /* Initialer Abstand vom oberen Rand */
+  top: 140px;
   width: 100%;
-  height: 200px; /* Höhe des Balkens */
-  background-image: url('../img/Balken.png'); /* Pfad zu deinem Hintergrundbild */
-  background-size: cover; /* Hintergrundbild füllt den Balken */
-  background-position: center; /* Bild ist zentriert */
+  height: 200px;
+  background-image: url('../img/Balken.png');
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: left;
   text-align: left;
-  position: relative; /* Statisch unter der Bar */
-  z-index: 900; /* Bleibt hinter der Navbar */
+  position: relative;
+  z-index: 900;
 }
 
-/* Text im breiten Balken */
 .bar-text {
   font-size: 50px;
   color: white;
@@ -118,11 +106,10 @@ body {
   margin-left: 40px;
 }
 
-/* Abschnitt mit Überschrift, Bild und Text */
 .section {
   margin-top: 200px;
   margin-left: 50px;
-  margin-bottom: 20px; /* Abstand unter dem Abschnitt */
+  margin-bottom: 20px;
 }
 
 .description-title {
@@ -133,8 +120,8 @@ body {
 }
 
 .content-container {
-  display: flex; /* Aktiviert Flexbox */
-  align-items: flex-start; /* Vertikale Ausrichtung */
+  display: flex;
+  align-items: flex-start;
 }
 
 .text-content {
@@ -145,32 +132,31 @@ body {
 .foden {
   height: 750px;
   width: auto;
-  margin-left: 10px; /* Abstand zum linken Nachbarelement (Text) */
+  margin-left: 10px;
   margin-right: 50px;
   margin-top: -20px;
 }
 
-
 footer {
-  background-color: #381D54; /* Hintergrundfarbe nur für den Footer */
-  color: #ffffff; /* Textfarbe */
-  padding: 20px; /* Innenabstand */
-  width: 100%; /* Vollständige Breite */
+  background-color: #381D54;
+  color: #ffffff;
+  padding: 20px;
+  width: 100%;
   height: 100px;
-  position: relative; /* Relative Positionierung */
-  bottom: 0; /* Positioniert den Footer am unteren Rand */
+  position: relative;
+  bottom: 0;
 }
 
 .footer-text {
-  margin-left: 50px; /* Kein Abstand um den Text */
+  margin-left: 50px;
 }
 
 .footer-link {
-  color: #ffffff; /* Linkfarbe */
-  text-decoration: underline; /* Unterstrich für den Link */
+  color: #ffffff;
+  text-decoration: underline;
   margin-left: 50px;
 }
 
 .footer-link:hover {
-  text-decoration: none; /* Kein Unterstrich, wenn der Link darüber hoverd wird */
+  text-decoration: none;
 }
